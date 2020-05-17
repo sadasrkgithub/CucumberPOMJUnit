@@ -48,6 +48,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -57,7 +58,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 17, 2020 04:23:46 PM</span>
+			<span class='label blue darken-3 suite-start-time'>May 17, 2020 06:46:49 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -73,6 +74,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -126,10 +129,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -140,10 +143,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -156,12 +159,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>14</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='46.667%'><span class='strong'>7</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='46.667%'>7</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='46.667%'>0</span> others
                 </div>
             </div>
         </div>
@@ -179,11 +182,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validation of car search page</span>
-						<span class='test-time'>May 17, 2020 04:23:57 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>May 17, 2020 06:47:02 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -195,13 +198,13 @@
 <div class='test-desc'>In order to validate car search
 As a buyer
 I navigate to http://www.carsguide.com.au</div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label'>@Search-Cars</span>
 	</div>
-	<span class='duration right label'>0h 0m 42s+816ms</span>
+	<span class='duration right label'>0h 2m 37s+966ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Searching for a new car</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Searching for a new car</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
@@ -212,36 +215,47 @@ I navigate to http://www.carsguide.com.au</div>
 			<div class="step-name" title="CarSearchSteps.i_move_to_buyAndsell_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I move to buyAndsell menu</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='6' class='node then pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_click_on_Search_cars()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I click on Search cars</div>
-			<div class="node-step"></div>
+		<li test-id='6' class='node then fail' status='fail'>
+			<div class="step-name" title="CarSearchSteps.i_click_on_Search_cars()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then I click on Search cars</div>
+			<textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)
+	at steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)
+	at ?.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)
+</textarea>
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_Select_make_as(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I Select make as "BMW"</div>
-			<div class="node-step"></div>
+		<li test-id='7' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_Select_make_as(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I Select make as "BMW"</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_Select_Model_as(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I Select Model as "1 Series"</div>
-			<div class="node-step"></div>
+		<li test-id='8' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_Select_Model_as(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I Select Model as "1 Series"</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='9' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_Select_location_as(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I Select location as "WA - All"</div>
-			<div class="node-step"></div>
+		<li test-id='9' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_Select_location_as(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I Select location as "WA - All"</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_Select_price_as(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I Select price as "$10,000"</div>
-			<div class="node-step"></div>
+		<li test-id='10' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_Select_price_as(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I Select price as "$10,000"</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='11' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_click_on_Find_my_next_car_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on Find my next car button</div>
-			<div class="node-step"></div>
+		<li test-id='11' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_click_on_Find_my_next_car_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And I click on Find my next car button</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.i_should_see_list_of_searched_cars(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I should see list of searched cars from "BMW"</div>
-			<div class="node-step"></div>
+		<li test-id='12' class='node then skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.i_should_see_list_of_searched_cars(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then I should see list of searched cars from "BMW"</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='13' class='node and pass' status='pass'>
-			<div class="step-name" title="CarSearchSteps.the_page_title_should_be(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the page title should be "Bmw 1 Series Under 10000 for Sale WA | carsguide"</div>
+		<li test-id='13' class='node and skip' status='skip'>
+			<div class="step-name" title="CarSearchSteps.the_page_title_should_be(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And the page title should be "Bmw 1 Series Under 10000 for Sale WA | carsguide"</div>
+			<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='14' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>AfterActions.tearDown(Scenario)</div>
 			<div class="node-step"></div>
 		</li>
 	</ul>
@@ -251,7 +265,7 @@ I navigate to http://www.carsguide.com.au</div>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>FB login use case</span>
-						<span class='test-time'>May 17, 2020 04:24:50 PM</span>
+						<span class='test-time'>May 17, 2020 06:49:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -265,7 +279,7 @@ I navigate to http://www.carsguide.com.au</div>
 	<div class='category-list'>
 		<span class='category label'>@fbLogin</span>
 	</div>
-	<span class='duration right label'>0h 0m 7s+118ms</span>
+	<span class='duration right label'>0h 0m 52s+10ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: FB test case with correct un and pwd</div>
 	</div>
@@ -332,13 +346,13 @@ I navigate to http://www.carsguide.com.au</div>
 					<div class='category-heading'>
 						<span class='category-name'>@Search-Cars</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -352,9 +366,9 @@ I navigate to http://www.carsguide.com.au</div>
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 17, 2020 04:23:57 PM</td>
+										<td>May 17, 2020 06:47:02 PM</td>
 										<td class='linked' test-id='2'>Searching for a new car</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -385,12 +399,12 @@ I navigate to http://www.carsguide.com.au</div>
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 17, 2020 04:24:50 PM</td>
+										<td>May 17, 2020 06:49:52 PM</td>
 										<td class='linked' test-id='15'>FB login use case</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2020 04:24:50 PM</td>
+										<td>May 17, 2020 06:49:52 PM</td>
 										<td class='linked' test-id='16'>FB test case with correct un and pwd</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -408,7 +422,69 @@ I navigate to http://www.carsguide.com.au</div>
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 17, 2020 06:47:41 PM</td>
+										<td class='linked' test-id='6'>Then I click on Search cars</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)
+	at steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)
+	at ?.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -428,25 +504,25 @@ I navigate to http://www.carsguide.com.au</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 17, 2020 04:23:46 PM</div>
+					<div class='panel-lead'>May 17, 2020 06:46:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 17, 2020 04:24:59 PM</div>
+			 		<div class='panel-lead'>May 17, 2020 06:50:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 12s+949ms</div>
+					<div class='panel-lead'>0h 3m 56s+71ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -463,11 +539,11 @@ I navigate to http://www.carsguide.com.au</div>
 						</tr>
 						<tr>
 							<td>@Search-Cars</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
@@ -491,38 +567,38 @@ I navigate to http://www.carsguide.com.au</div>
 		<script>
 			var statusGroup = {
                 parentCount: 2,
-				passParent: 2,
-				failParent: 0,
+				passParent: 1,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 2,
-				passChild: 2,
-				failChild: 0,
+				passChild: 1,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 14,
-				passGrandChild: 14,
-				failGrandChild: 0,
+				exceptionsChild: 1,
+				grandChildCount: 15,
+				passGrandChild: 7,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 7,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 8,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Validation of car search page":42.816,"FB login use case":7.118
+			        "Validation of car search page":157.966,"FB login use case":52.01
 			};
 		</script>
 	

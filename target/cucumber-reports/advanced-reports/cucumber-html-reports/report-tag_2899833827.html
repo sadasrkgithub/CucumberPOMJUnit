@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Way2Automation Cucumber Reports</td>
         <td>1</td>
-      <td>17 May 2020, 16:25</td>
+      <td>17 May 2020, 18:50</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Search-Cars</td>
-          <td      class="passed"    >10</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">10</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="42883862400">42.883</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="41570056405">41.570</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">42.883</span>
+  <span class="lead-duration duration">41.570</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Searching for a new car</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeActions.setUp()</span>
 
-  <span class="lead-duration duration">10.472</span>
+  <span class="lead-duration duration">12.108</span>
 
           </div>
 
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on the home page https://www.carsguide.com.au of carsguide website</span>
 
-  <span class="lead-duration duration">6.628</span>
+  <span class="lead-duration duration">19.332</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I move to buyAndsell menu</span>
 
-  <span class="lead-duration duration">6.208</span>
+  <span class="lead-duration duration">20.207</span>
 
 </div>
 
@@ -308,11 +308,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">I click on Search cars</span>
 
-  <span class="lead-duration duration">7.063</span>
+  <span class="lead-duration duration">2.023</span>
 
 </div>
 
@@ -320,6 +320,24 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)
+	at steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)
+	at &#10045;.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -335,11 +353,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I Select make as &quot;<span class="argument">BMW</span>&quot;</span>
 
-  <span class="lead-duration duration">3.482</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -362,11 +380,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I Select Model as &quot;<span class="argument">1 Series</span>&quot;</span>
 
-  <span class="lead-duration duration">3.306</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -389,11 +407,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I Select location as &quot;<span class="argument">WA - All</span>&quot;</span>
 
-  <span class="lead-duration duration">3.360</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -416,11 +434,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I Select price as &quot;<span class="argument">$10,000</span>&quot;</span>
 
-  <span class="lead-duration duration">3.447</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -443,11 +461,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on Find my next car button</span>
 
-  <span class="lead-duration duration">9.264</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -470,11 +488,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I should see list of searched cars from &quot;<span class="argument">BMW</span>&quot;</span>
 
-  <span class="lead-duration duration">0.096</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -497,11 +515,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">the page title should be &quot;<span class="argument">Bmw 1 Series Under 10000 for Sale WA | carsguide</span>&quot;</span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -528,7 +546,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -540,13 +558,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">AfterActions.tearDown(Scenario)</span>
 
-  <span class="lead-duration duration">0.820</span>
+  <span class="lead-duration duration">1:57.293</span>
 
           </div>
 
@@ -555,6 +573,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_450646183.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_450646183.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

@@ -45,7 +45,8 @@ formatter.match({
   "location": "CarSearchSteps.i_click_on_Search_cars()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)\r\n\tat steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)\r\n\tat ✽.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I Select make as \"BMW\"",
@@ -55,7 +56,7 @@ formatter.match({
   "location": "CarSearchSteps.i_Select_make_as(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I Select Model as \"1 Series\"",
@@ -65,7 +66,7 @@ formatter.match({
   "location": "CarSearchSteps.i_Select_Model_as(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I Select location as \"WA - All\"",
@@ -75,7 +76,7 @@ formatter.match({
   "location": "CarSearchSteps.i_Select_location_as(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I Select price as \"$10,000\"",
@@ -85,7 +86,7 @@ formatter.match({
   "location": "CarSearchSteps.i_Select_price_as(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I click on Find my next car button",
@@ -95,7 +96,7 @@ formatter.match({
   "location": "CarSearchSteps.i_click_on_Find_my_next_car_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I should see list of searched cars from \"BMW\"",
@@ -105,7 +106,7 @@ formatter.match({
   "location": "CarSearchSteps.i_should_see_list_of_searched_cars(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the page title should be \"Bmw 1 Series Under 10000 for Sale WA | carsguide\"",
@@ -115,8 +116,9 @@ formatter.match({
   "location": "CarSearchSteps.the_page_title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });

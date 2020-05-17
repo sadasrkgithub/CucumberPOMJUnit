@@ -33,8 +33,9 @@ public class FBLoginSteps
 
 	
 	@When("^when i click on login button$")
-	public void when_i_click_on_login_button() 
+	public void when_i_click_on_login_button() throws InterruptedException 
 	{
+		Thread.sleep(3000);
 		FBPageObjects.clickOnLogin();
 	}
 

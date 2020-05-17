@@ -26,20 +26,18 @@ public class CarsGuideHomePage
 	
 	public static void moveToBuyAndSellCars() throws InterruptedException
 	{
-		BaseEngine BaseEngine5 = new BaseEngine();
-		
+		Thread.sleep(3000);
 		Assert.assertTrue(buyAndSell.isDisplayed() && buyAndSell.isEnabled());
-		new Actions(BaseEngine5.getDriver()).moveToElement(buyAndSell).perform();
+		new Actions(BaseEngine.getDriver()).moveToElement(buyAndSell).perform();
 		Thread.sleep(3000);	  
 	}
 	
 	
 	public static void moveToBuyAndSellCarstwo() throws InterruptedException
 	{
-		BaseEngine BaseEngine6 = new BaseEngine();
 		
 		Assert.assertTrue(buyAndSellTwo.isDisplayed() && buyAndSellTwo.isEnabled());
-		new Actions(BaseEngine6.getDriver()).moveToElement(buyAndSellTwo).perform();
+		new Actions(BaseEngine.getDriver()).moveToElement(buyAndSellTwo).perform();
 		Thread.sleep(3000);	  
 	}
 	
@@ -60,8 +58,7 @@ public class CarsGuideHomePage
 	
 	   static 
 	   {
-		   BaseEngine BaseEngine7 = new BaseEngine();
-			
-		   PageFactory.initElements(BaseEngine7.getDriver(), CarsGuideHomePage.class);
+		   
+		   PageFactory.initElements(BaseEngine.getDriver(), CarsGuideHomePage.class);
 	   }
 }

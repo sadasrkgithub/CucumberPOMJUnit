@@ -31,6 +31,7 @@ public class CarSearchSteps
 	@When("^I move to buyAndsell menu$")
 	public void i_move_to_buyAndsell_menu() throws InterruptedException 
 	{
+		Thread.sleep(3000);
 		CarsGuideHomePage.moveToBuyAndSellCars();
 		Thread.sleep(3000);
 	  

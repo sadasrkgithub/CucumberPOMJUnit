@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="72.156354">
-    <testcase classname="Validation of car search page" name="Searching for a new car" time="54.251853">
-        <system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="235.186498">
+    <testcase classname="Validation of car search page" name="Searching for a new car" time="171.032301">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:53)&#13;&#10;&#9;at com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)&#13;&#10;&#9;at steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)&#13;&#10;&#9;at ✽.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)&#13;&#10;">
             <![CDATA[Given I am on the home page https://www.carsguide.com.au of carsguide website.passed
 When I move to buyAndsell menu..............................................passed
-Then I click on Search cars.................................................passed
-And I Select make as "BMW"..................................................passed
-And I Select Model as "1 Series"............................................passed
-And I Select location as "WA - All".........................................passed
-And I Select price as "$10,000".............................................passed
-And I click on Find my next car button......................................passed
-Then I should see list of searched cars from "BMW"..........................passed
-And the page title should be "Bmw 1 Series Under 10000 for Sale WA | carsguide".passed
+Then I click on Search cars.................................................failed
+And I Select make as "BMW"..................................................skipped
+And I Select Model as "1 Series"............................................skipped
+And I Select location as "WA - All".........................................skipped
+And I Select price as "$10,000".............................................skipped
+And I click on Find my next car button......................................skipped
+Then I should see list of searched cars from "BMW"..........................skipped
+And the page title should be "Bmw 1 Series Under 10000 for Sale WA | carsguide".skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.qa.pageobjects.CarsGuideHomePage.click_on_search_cars(CarsGuideHomePage.java:49)
+	at steps.CarSearchSteps.i_click_on_Search_cars(CarSearchSteps.java:43)
+	at ✽.I click on Search cars(file:src/test/resources/features/CarSearch.feature:12)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="FB login use case" name="FB test case with correct un and pwd" time="17.904501">
+    <testcase classname="FB login use case" name="FB test case with correct un and pwd" time="64.154197">
         <system-out>
             <![CDATA[Given when user is home page................................................passed
 When I enter UN as "rameshsoft.selenium" and pwd as "practice"..............passed
