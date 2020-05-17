@@ -1,0 +1,329 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-17T10:53:46.607Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10472231400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Searching for a new car",
+        "description": "",
+        "id": "validation-of-car-search-page;searching-for-a-new-car",
+        "after": [
+          {
+            "result": {
+              "duration": 820688500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6628668900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the home page https://www.carsguide.com.au of carsguide website",
+            "match": {
+              "location": "CarSearchSteps.i_am_on_the_home_page_https_www_carsguide_com_au_of_carsguide_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6208006600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I move to buyAndsell menu",
+            "match": {
+              "location": "CarSearchSteps.i_move_to_buyAndsell_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7063603700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Search cars",
+            "match": {
+              "location": "CarSearchSteps.i_click_on_Search_cars()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3482110200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I Select make as \"BMW\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BMW",
+                  "offset": 18
+                }
+              ],
+              "location": "CarSearchSteps.i_Select_make_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3306053400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Select Model as \"1 Series\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 Series",
+                  "offset": 19
+                }
+              ],
+              "location": "CarSearchSteps.i_Select_Model_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3360171300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I Select location as \"WA - All\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WA - All",
+                  "offset": 22
+                }
+              ],
+              "location": "CarSearchSteps.i_Select_location_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3447628300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Select price as \"$10,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$10,000",
+                  "offset": 19
+                }
+              ],
+              "location": "CarSearchSteps.i_Select_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9264450300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on Find my next car button",
+            "match": {
+              "location": "CarSearchSteps.i_click_on_Find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96680300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see list of searched cars from \"BMW\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BMW",
+                  "offset": 41
+                }
+              ],
+              "location": "CarSearchSteps.i_should_see_list_of_searched_cars(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26489400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the page title should be \"Bmw 1 Series Under 10000 for Sale WA | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bmw 1 Series Under 10000 for Sale WA | carsguide",
+                  "offset": 26
+                }
+              ],
+              "location": "CarSearchSteps.the_page_title_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of car search page",
+    "description": "In order to validate car search\nAs a buyer\nI navigate to http://www.carsguide.com.au",
+    "id": "validation-of-car-search-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CarSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-17T10:54:40.870Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9702158200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "FB test case with correct un and pwd",
+        "description": "",
+        "id": "fb-login-use-case;fb-test-case-with-correct-un-and-pwd",
+        "after": [
+          {
+            "result": {
+              "duration": 1067390400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3522004100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "when user is home page",
+            "match": {
+              "location": "FBLoginSteps.when_user_is_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 445953500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter UN as \"rameshsoft.selenium\" and pwd as \"practice\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rameshsoft.selenium",
+                  "offset": 15
+                },
+                {
+                  "val": "practice",
+                  "offset": 48
+                }
+              ],
+              "location": "FBLoginSteps.i_enter_UN_and_pwd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125487000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "when i click on login button",
+            "match": {
+              "location": "FBLoginSteps.when_i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3024216200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "login page should be opened as \"Log in to Facebook | Facebook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in to Facebook | Facebook",
+                  "offset": 32
+                }
+              ],
+              "location": "FBLoginSteps.login_page_should_be_opened(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@fbLogin"
+          }
+        ]
+      }
+    ],
+    "name": "FB login use case",
+    "description": "",
+    "id": "fb-login-use-case",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Facebook_Login.feature",
+    "tags": [
+      {
+        "name": "@fbLogin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
